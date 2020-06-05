@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_above="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="ExtraText">
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:textSize="15sp"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="300dp"
         android:id="@+id/text1"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="visible"/>
+        android:visibility="visible" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:layout_marginStart="162dp"
         android:textSize="15sp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="10dp"
+        android:text="new text"
         android:id="@+id/text2"
-        app:layout_constraintTop_toTopOf="parent"
-        android:visibility="visible"/>
+        android:visibility="invisible" />
 
     <Button
-        android:id="@+id/button1"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:id="@+id/button1"
         android:text="hide_text"
-        android:textSize="15sp"/>
-
+        android:layout_marginTop="10dp"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="120dp"
-        android:layout_height="50dp"
+        android:layout_height="64dp"
         android:layout_gravity="center"
-        android:text="create_a_new_text"
+        android:layout_marginTop="10dp"
+        android:text="create new text"
         android:textSize="15sp" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:text="exit"
+        android:textSize="15sp" />
+
+</LinearLayout>
